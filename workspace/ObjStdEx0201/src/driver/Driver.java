@@ -8,14 +8,12 @@ public class Driver {
 		// TODO 自動生成されたメソッド・スタブ
 		Product.displayStoreName();
 		
-		Product key = new Product("キーボード", 4500);
-		Product mouse = new Product("マウス", 2000);
+		Product key = new Product("キーボード");
+		System.out.println("getPrice()の結果 : "+key.getPrice());
 		
-		key.down();
-		mouse.up(500);
-		
+		key.setPrice(2800);
+		System.out.println("---再設定後---");
 		key.display();
-		mouse.display();
 	}
 
 }
